@@ -15,14 +15,12 @@ import ImgLogo3 from "../../assets/emoj4.jpeg";
 // import ImgLogo10 from "../../assets/Ellipse 7.png";
 // import ImgLogo11 from "../../assets/Ellipse 6.png";
 import ImgLogo12 from "../../assets/emoj1.jpeg";
-import avatar from '../mocks/avatar'
-import AvatarTrivia from '../componets/Avatar';
 
 
 
 const Home = () => {
   return (
-    <View className="flex-1 justify-center bg-slate-950">
+    <View className="flex-1 justify-center bg-slate-950r">
       <View className="my-56  items-center">
         <View className="w-3/4 items-center">
           <View className="mt-20 items-center">
@@ -35,13 +33,13 @@ const Home = () => {
               </Text>
           </View>
           <View className=" flex-row flex-wrap my-10 border-spacing-4 items-center">
-            {avatar.map((item, index) => (
-              <AvatarTrivia 
-              key={index}
-              image={item.image}/>
-            ))}
-
-            {/* <Avatar/> */}
+           {/* {dataAvatar}
+            <Image
+            key={index}
+            src={item.image}
+            className="w-20 h-20  my-2 rounded-full" 
+            alt='test'
+          /> */}
           </View>
           
           <TextInput

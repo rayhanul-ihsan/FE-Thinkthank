@@ -2,11 +2,11 @@ import { StyleSheet, Image, Text, View } from 'react-native'
 import React from 'react'
 
 
-type Props = {
-    image: string
-}
+interface Data  {
+  image: string
+}[];
 
-const AvatarTrivia = (props: Props) => {
+const AvatarTrivia = (props: Data) => {
     const {image} = props
     console.log(image)
   return (
@@ -18,7 +18,7 @@ const AvatarTrivia = (props: Props) => {
             />
       </Text>
     </View>
-  )
+  )  
 }
 
 export default AvatarTrivia
